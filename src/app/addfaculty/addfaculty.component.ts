@@ -16,7 +16,7 @@ export class AddfacultyComponent implements OnInit {
   qual=""
   address=""
   mobile=""
-status:boolean=false
+
   readValues=()=>{
     let data={
       "name":this.name,
@@ -28,7 +28,7 @@ status:boolean=false
       "mobile":this.mobile
     }
     console.log(data)
-    this.status=true
+    
   }
 
   ngOnInit(): void {
