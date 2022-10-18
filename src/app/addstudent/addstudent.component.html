@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Studentname">Studentname</label>
+                    <input type="Studentname" placeholder="Studentname" class="form-control" name="name"[(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Roll.No">Roll.No</label>
+                    <input type="Roll.No" placeholder="Roll.No" class="form-control" name="rollno"[(ngModel)]="rollno">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Admission Number">Admission Number</label>
+                    <input type="Admission Number" placeholder="Admission Number" class="form-control" name="adno"[(ngModel)]="adno">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="College Name">College Name</label>
+                    <input type="College Name" placeholder="College Name" class="form-control" name="college"[(ngModel)]="college">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Department">Department</label>
+                    <select name="dept"[(ngModel)]="dept" id=""  class="form-control">
+                        <option  value="--Select--">--Select--</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="Mech">Mech</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Blood Group">Blood Group</label>
+                    <select name="blood"[(ngModel)]="blood" id="" class="form-control">
+                        <option value="--select">--select</option>
+                        <option value="AB">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="DOB">DOB</label>
+                    <input type="date" name="dob"[(ngModel)]="dob" id="" placeholder="dd-mm-yyyy" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Parent Name">Parent Name</label>
+                    <input type="Parent Name" placeholder="Parent Name" class="form-control" name="pname"[(ngModel)]="pname">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Parent Email ID">Parent Email ID</label>
+                    <input type="email" name="pemail"[(ngModel)]="pemail" id="" placeholder="Email-id" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="Gaurdian Name">Gaurdian Name</label>
+                    <input type="Gaurdian Name" placeholder="Gaurdian Name" class="form-control" name="gname"[(ngModel)]="gname">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="Guardian Address">Guardian Address</label>
+                    <textarea name="gaddress"[(ngModel)]="gaddress" id="" cols="30" rows="10" placeholder="Guardian Address" class="form-control"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                 <button class="btn btn-info" (click)="readValues()" >SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
