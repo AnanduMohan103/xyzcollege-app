@@ -14,7 +14,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes:Routes=[
   {
-    path:"",component:AddstudentComponent
+    path:"nav",component:NavbarComponent
+  },
+  {
+    path:"",component:UserloginComponent
+  },
+  {
+    path:"student",component:AddstudentComponent
   },
   {
     path:"view",component:ViewallStudentComponent

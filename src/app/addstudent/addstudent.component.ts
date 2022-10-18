@@ -21,8 +21,8 @@ pemail=""
 gname=""
 gaddress=""
 
-status:boolean=false
-readValue=()=>{
+
+readValues=()=>{
   let data={
     "name":this.name,
     "rollno":this.rollno,
@@ -37,7 +37,7 @@ readValue=()=>{
     "gaddress":this.gaddress
   }
   console.log(data)
-  this.status=true
+  
 }
   ngOnInit(): void {
   }
