@@ -7,6 +7,9 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
+import { ViewallStudentComponent } from './viewall-student/viewall-student.component';
+import { FormsModule } from '@angular/forms';
+import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
 
 
 @NgModule({
@@ -16,11 +19,14 @@ import { AddfacultyComponent } from './addfaculty/addfaculty.component';
     NavbarComponent,
     AddstudentComponent,
     AddfacultyComponent,
+    ViewallStudentComponent,
+    ViewallfacultyComponent,
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
